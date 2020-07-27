@@ -20,12 +20,12 @@ public class VowelCounter {
 		Scanner scan = new Scanner(System.in);
 
 		String user_str;
-		int a_count = 0;
-		int e_count = 0;
-		int i_count = 0;
-		int o_count = 0;
-		int u_count = 0;
-		int non_vowel_count = 0;
+		int aCount = 0;
+		int eCount = 0;
+		int iCount = 0;
+		int oCount = 0;
+		int uCount = 0;
+		int otherCount = 0;
 
 		System.out.print("Enter string: ");
 		user_str = scan.nextLine();
@@ -37,36 +37,36 @@ public class VowelCounter {
 			char chr = user_str.charAt(i);
 
 			if (chr == 'a') {
-				a_count++;
+				aCount++;
 			}
 
 			else if (chr == 'e') {
-				e_count++;
+				eCount++;
 			}
 
 			else if (chr == 'i') {
-				i_count++;
+				iCount++;
 			}
 			
 			else if (chr == 'o') {
-				o_count++;
+				oCount++;
 			}
 			
 			else if (chr == 'u') {
-				u_count++;
+				uCount++;
 			}
 
 			else
-				non_vowel_count++;
+				otherCount++;
 		}	
 		
 		System.out.println("Vowel count");
-		System.out.println("\ta: " + a_count);
-		System.out.println("\te: " + e_count);
-		System.out.println("\ti: " + i_count);
-		System.out.println("\to: " + o_count);
-		System.out.println("\tu: " + u_count);
-		System.out.println("Non-vowel count: " + non_vowel_count);
+		System.out.println("\ta: " + aCount);
+		System.out.println("\te: " + eCount);
+		System.out.println("\ti: " + iCount);
+		System.out.println("\to: " + oCount);
+		System.out.println("\tu: " + uCount);
+		System.out.println("Non-vowel count: " + otherCount);
 		
 	}
 }
