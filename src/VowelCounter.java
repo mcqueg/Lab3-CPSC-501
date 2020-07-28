@@ -68,5 +68,6 @@ public class VowelCounter {
 		System.out.println("\tu: " + uCount);
 		System.out.println("Non-vowel count: " + otherCount);
 		
+		scan.close();
 	}
 }
